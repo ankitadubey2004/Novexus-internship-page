@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Apply Now - Novexus</title>
+  <link rel="stylesheet" href="apply.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Apply for Internship</h1>
+    
+    <form id="applicationForm">
+      <label>Name:</label>
+      <input type="text" name="name" required />
+
+      <label>Email:</label>
+      <input type="email" name="email" required />
+
+      <label>Phone:</label>
+      <input type="tel" name="phone" required />
+
+      <label>LinkedIn/GitHub URL:</label>
+      <input type="url" name="githubOrLinkedIn" required />
+
+      <label>Resume URL:</label>
+      <input type="url" name="resumeUrl" required />
+
+      <button type="submit">Submit Application</button>
+    </form>
+
+    <p id="confirmationMsg" style="display: none; color: green; margin-top: 1rem;">
+      ✅ Application submitted successfully!
+    </p>
+  </div>
+
+  <script src="apply.js"></script>
+</body>
+</html>
