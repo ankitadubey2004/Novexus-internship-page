@@ -2,38 +2,50 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Apply Now - Novexus</title>
   <link rel="stylesheet" href="apply.css" />
 </head>
 <body>
-  <div class="container">
-    <h1>Apply for Internship</h1>
-    
-    <form id="applicationForm">
-      <label>Name:</label>
-      <input type="text" name="name" required />
 
-      <label>Email:</label>
-      <input type="email" name="email" required />
+<header class="header">
+  <img src="assets/images/img_logoremovebgpreview.png" alt="Novexus Logo" class="logo" />
+  <nav class="nav-links">
+    <a href="#" class="nav-link">Home</a>
+    <a href="#" class="nav-link">About Us</a>
+    <a href="#" class="nav-link">Our Team</a>
+    <a href="#" class="nav-link">Our Clients</a>
+    <a href="index.html" class="nav-link">Internships</a>
+    <a href="#" class="nav-link">Contact</a>
+  </nav>
+  <img src="assets/images/img_search_icon_1.svg" alt="Search" class="search-icon" />
+</header>
 
-      <label>Phone:</label>
-      <input type="tel" name="phone" required />
+<div class="container">
+  <h1>Apply for Internship</h1>
+  
+  <form id="applicationForm">
+    <label for="name">Name:</label>
+    <input id="name" type="text" name="name" required />
 
-      <label>LinkedIn/GitHub URL:</label>
-      <input type="url" name="githubOrLinkedIn" required />
+    <label for="email">Email:</label>
+    <input id="email" type="email" name="email" required />
 
-      <label>Resume URL:</label>
-      <input type="url" name="resumeUrl" required />
+    <label for="phone">Phone:</label>
+    <input id="phone" type="tel" name="phone" required />
 
-      <button type="submit">Submit Application</button>
-    </form>
+    <label for="githubOrLinkedIn">LinkedIn/GitHub URL:</label>
+    <input id="githubOrLinkedIn" type="url" name="githubOrLinkedIn" required />
 
-    <p id="confirmationMsg" style="display: none; color: green; margin-top: 1rem;">
-      ✅ Application submitted successfully!
-    </p>
-  </div>
+    <label for="resumeUrl">Resume URL:</label>
+    <input id="resumeUrl" type="url" name="resumeUrl" required />
 
-  <script src="apply.js"></script>
+    <button type="submit">Submit Application</button>
+  </form>
+
+  <p id="confirmationMsg" style="display: none;">✅ Application submitted successfully!</p>
+</div>
+
+<script src="apply.js"></script>
 </body>
 </html>

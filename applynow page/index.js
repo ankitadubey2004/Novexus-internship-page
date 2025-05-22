@@ -11,6 +11,14 @@ document.addEventListener('DOMContentLoaded', function () {
     indicators[index].classList.add('active');
     currentSlide = index;
   }
+  const currentPage = window.location.pathname.split("/").pop();
+  const navLink = document.querySelectorAll("nav a");
+
+  navLink.forEach(link => {
+    if (link.getAttribute("href") === currentPage) {
+      link.classList.add("active");
+    }
+  });
 
   // Event listeners for indicators
   indicators.forEach((indicator, index) => {
