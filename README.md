@@ -19,33 +19,39 @@ This is a full-stack internship application portal for Novexus Technologies, bui
 ```bash
 git clone https://github.com/ankitadubey2004/Novexus-internship-page
 cd novexus-internship-page
+```
 
 2. Install frontend dependencies:
 ```bash
 cd applynow
 npm install
+```
 
 3. Install backend dependencies:
 ```bash
 cd ../novexus-backend
 npm install
+```
 
 4. Create a .env file inside the novexus-backend folder:
 ```bash
 MONGO_URI=your_mongodb_connection_string
 PORT=5000
+```
 
 
 5. Start the backend:
 ```bash
 cd novexus-backend
 npm start
+```
  
 
 6. Start the frontend:
 ```bash
 cd ../applynow
 npm start
+```
 
 ---
 
