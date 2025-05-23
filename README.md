@@ -47,12 +47,15 @@ npm start
 cd ../applynow
 npm start
 
-
-🔗 Live Site
-https://novexus-internship.netlify.app/
+---
 
 
-🔐 MongoDB Note
+## 🔗 Live Site
+[link text](hhttps://novexus-internship.netlify.app/)	
+
+---
+
+## 🔐 MongoDB Note
 MongoDB credentials are stored securely in the .env file.
 
 .env is ignored in version control to keep your database secure.
@@ -60,6 +63,7 @@ MongoDB credentials are stored securely in the .env file.
 Example used in code:
 mongoose.connect(process.env.MONGO_URI)
 
+--- 
 
 ## 📸 Screenshots
 
@@ -69,8 +73,9 @@ mongoose.connect(process.env.MONGO_URI)
 ### ✅ Submission Confirmation  
 ![Confirmation Screenshot](applynow/assets/images/Screenshot%202025-05-23%20131904.png)
 
+--- 
 
-✅ Features
+## ✅ Features
 Internship role listings (fetched dynamically)
 
 Validated "Apply Now" form with:
@@ -87,7 +92,9 @@ MongoDB used for data persistence
 
 Admin view : Basic table to list applicants 
 
-📂 Deliverables (as per task)
+--- 
+
+## 📂 Deliverables (as per task)
 ✅ Full source code
 
 ✅ Deployed frontend and backend
@@ -100,11 +107,11 @@ Admin view : Basic table to list applicants
 
 🔁 Admin View
 
-👩‍💻 Developer
-Intern: Ankita Dubey
-Start Date: 19th May 2025
-Submission Date: 26th May 2025
-Mentor: Aryan Parashar
+## 👩‍💻 Developer
+- **Intern** : Ankita Dubey
+-  **Start Date** : 19th May 2025
+-  **Submission Date** : 26th May 2025
+-  **Mentor** : Aryan Parashar
 
 
 
