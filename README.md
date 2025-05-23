@@ -57,17 +57,15 @@ npm start
 
 
 ## 🔗 Live Site
-[link text](hhttps://novexus-internship.netlify.app/)	
+[Live Site](https://novexus-internship.netlify.app/)
 
 ---
 
 ## 🔐 MongoDB Note
-MongoDB credentials are stored securely in the .env file.
+- MongoDB credentials are stored securely in the .env file.
+- .env is ignored in version control to keep your database secure.
 
-.env is ignored in version control to keep your database secure.
-
-Example used in code:
-mongoose.connect(process.env.MONGO_URI)
+- Example used in code: mongoose.connect(process.env.MONGO_URI)
 
 --- 
 
@@ -77,26 +75,19 @@ mongoose.connect(process.env.MONGO_URI)
 ![Form Screenshot](applynow%20page/assets/images/Screenshot%202025-05-23%20131837.png)
 
 ### ✅ Submission Confirmation  
-![Confirmation Screenshot](applynow/assets/images/Screenshot%202025-05-23%20131904.png)
+![Confirmation Screenshot](applynow%20page/assets/images/Screenshot%202025-05-23%20131904.png)
 
 --- 
 
 ## ✅ Features
-Internship role listings (fetched dynamically)
-
-Validated "Apply Now" form with:
-
-Name, Email, Phone
-
-GitHub/LinkedIn URL
-
-Resume URL
-
-Success confirmation message after submission
-
-MongoDB used for data persistence
-
-Admin view : Basic table to list applicants 
+- Internship role listings (fetched dynamically)
+- Validated "Apply Now" form with:
+- Name, Email, Phone
+- GitHub/LinkedIn URL
+- Resume URL
+- Success confirmation message after submission
+- MongoDB used for data persistence
+- Admin view : Basic table to list applicants 
 
 --- 
 
@@ -110,6 +101,8 @@ Admin view : Basic table to list applicants
 ✅ Database connectivity (MongoDB)
 
 ✅ README with screenshots
+
+---
 
 🔁 Admin View
 
