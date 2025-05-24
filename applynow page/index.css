@@ -15,15 +15,12 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 10vh;
-    /* width: 100%;
-  height: 74px; */
+    height: 74px;
     background-color: rgba(0, 0, 0, 0.33);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* padding: 0 34px; */
-    padding: 0 5vw;
+    padding: 0 34px;
     z-index: 1000;
   }
 
@@ -256,7 +253,7 @@
     border-radius: 27px;
   }
 
-  /* .role-thumbnail {
+  .role-thumbnail {
     width: 257px;
     height: 295px;
     object-fit: cover;
@@ -268,23 +265,8 @@
 
   .role-thumbnail.active {
     opacity: 1;
-    border: 4px solid #d7e0e9; 
-  }*/
-.role-thumbnails {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  max-width: 180vw;  /* Limit to 180% of viewport width */
-  flex-wrap: wrap;    /* Allow wrapping if needed */
-  margin: 0 auto;
-  padding: 10px 0;
-}
-
-.role-thumbnail.active {
-  border: 3px solid #007bff;
-  transform: scale(1.05);
-}
-
+    border: 4px solid #d7e0e9;
+  }
 
   .carousel-indicators {
     display: flex;
@@ -778,89 +760,88 @@
     }
   }
 
-  /* Responsive Design */
-  /* @media (max-width: 1200px) {
-  .hero-title {
-    font-size: 60px;
-    line-height: 72px;
+  @media (max-width: 1200px) {
+    .hero-title {
+      font-size: 60px;
+      line-height: 72px;
+    }
+
+    .benefits-cards {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .services-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
 
-  .benefits-cards {
-    grid-template-columns: repeat(2, 1fr);
+  @media (max-width: 992px) {
+
+    .about-section,
+    .future-section {
+      flex-direction: column;
+      padding: 30px 60px;
+    }
+
+    .about-main-image,
+    .future-image {
+      width: 100%;
+      height: auto;
+    }
+
+    .roles-section,
+    .benefits-section,
+    .application-section,
+    .testimonials-section,
+    .digital-edge-section,
+    .footer {
+      padding: 30px 60px;
+    }
+
+    .testimonials-grid {
+      grid-template-columns: 1fr;
+    }
   }
 
-  .services-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
+  @media (max-width: 768px) {
+    .hero-section {
+      padding-left: 60px;
+    }
 
-@media (max-width: 992px) {
+    .hero-title {
+      font-size: 48px;
+      line-height: 58px;
+    }
 
-  .about-section,
-  .future-section {
-    flex-direction: column;
-    padding: 30px 60px;
-  }
+    .nav-links {
+      display: none;
+    }
 
-  .about-main-image,
-  .future-image {
-    width: 100%;
-    height: auto;
-  }
+    .benefits-cards,
+    .services-grid {
+      grid-template-columns: 1fr;
+    }
 
-  .roles-section,
-  .benefits-section,
-  .application-section,
-  .testimonials-section,
-  .digital-edge-section,
-  .footer {
-    padding: 30px 60px;
-  }
+    .application-form {
+      grid-template-columns: 1fr;
+    }
 
-  .testimonials-grid {
-    grid-template-columns: 1fr;
-  }
-}
+    .form-group.full-width {
+      grid-column: 1;
+    }
 
-@media (max-width: 768px) {
-  .hero-section {
-    padding-left: 60px;
-  }
+    .apply-btn {
+      grid-column: 1;
+      justify-self: center;
+    }
 
-  .hero-title {
-    font-size: 48px;
-    line-height: 58px;
+    .footer-top {
+      grid-template-columns: 1fr;
+    }
   }
 
-  .nav-links {
-    display: none;
-  }
-
-  .benefits-cards,
-  .services-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .application-form {
-    grid-template-columns: 1fr;
-  }
-
-  .form-group.full-width {
-    grid-column: 1;
-  }
-
-  .apply-btn {
-    grid-column: 1;
-    justify-self: center;
-  }
-
-  .footer-top {
-    grid-template-columns: 1fr;
-  }
-} */
-  /* Media Query for devices smaller than 768px (Tablets and Phones) */
-  @media (max-width: 800px) {
-    .header {
+   @media (max-width: 800px) {
+    /* .header {
       flex-direction: row;
       height: auto;
       padding: 2vh 5vw;
@@ -874,37 +855,25 @@
     }
 
     .nav-links {
-      justify-content:end;
+      justify-content: end;
     }
 
-    .nav-links{
+    .nav-links {
       width: 150vw;
       text-align: right;
     }
+
     .navbar {
       flex-direction: column;
       gap: 2vh;
       margin-top: 1vh;
-      /* horizontal layout */
       justify-content: space-between;
-            width: 180vw;
-      padding: 1vh 5vw;
-
-
-
-    }
-    .search-icon {
-      text-align: right;
-    }
-
-    /* .navbar {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
       width: 180vw;
       padding: 1vh 5vw;
-    } */
+
+
+
+    }
 
     .navbar a {
       font-size: 4vw;
@@ -917,116 +886,39 @@
     }
 
     .hero-section {
-      flex-direction: column;
-      padding: 5vh 5vw;
-      text-align: center;
-      width: 180vw;
+      padding-left: 60px;
     }
 
     .hero-title {
-      font-size: 10vw;
-      line-height: 12vw;
+      font-size: 48px;
+      line-height: 58px;
     }
 
-    .hero-description {
-      font-size: 4vw;
+    .nav-links {
+      display: none;
+    }
+ */
+    .benefits-cards,
+    .services-grid {
+      grid-template-columns: 1fr;
     }
 
-    .btn {
-      font-size: 4vw;
-      padding: 2vh 6vw;
+    .application-form {
+      grid-template-columns: 1fr;
     }
 
-    .hero-image img {
-      width: 70vw;
+    .form-group.full-width {
+      grid-column: 1;
     }
-    .role-thumbnails {
-    justify-content: flex-start;
+
+    .apply-btn {
+      grid-column: 1;
+      justify-self: center;
+    }
+
+    .footer-top {
+      grid-template-columns: 1fr;
+    }
   }
 
-  .role-thumbnail {
-    width: 100px;   /* previously 70px */
-    height: 100px;
-  }
-  /* .role-thumbnail {
-    width: 70px;
-    height: 70px; */
-  }
-
-    .about-section {
-      padding: 5vh 5vw;
-      width: 180vw;
-
-    }
-
-    .about-title {
-      font-size: 6vw;
-    }
-
-    .about-content {
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .about-main-image {
-      width: 70vw;
-    }
-
-    .about-description {
-      font-size: 4vw;
-      text-align: center;
-      max-width: 90%;
-    }
-
-    .future-section {
-      padding: 5vh 5vw;
-      width: 180vw;
-
-    }
-
-    .roles-section {
-      width: 150vh;
-    }
-
-    .benefits-section {
-      width: 180vw;
-    }
-
-    .application-section {
-      width: 180vw;
-    }
-
-    .testimonials-section {
-      width: 180vw;
-    }
-
-    .digital-edge-section {
-      width: 180vw;
-    }
-
-    .footer {
-      width: 180vw;
-
-    }
-
-    .vendor-title {
-      font-size: 6vw;
-    }
-
-    .vendor-card {
-      width: 80vw;
-      padding: 2vh 4vw;
-    }
-
-    .vendor-name {
-      font-size: 4.5vw;
-    }
-
-    .vendor-description {
-      font-size: 3.5vw;
-    }
-
-    .footer {
-      font-size: 3.5vw;
-    }
-  
+  */
