@@ -10,13 +10,19 @@ body {
   overflow-x: hidden;
   padding-top: 74px; space for fixed header */
   background-image: url(assets/images/img_rectangle.png);
-  background-size: cover;           /* Cover whole viewport */
-  background-position: center;      /* Center the image */
-  background-repeat: no-repeat;     /* No repeat */
-  background-attachment: fixed;     /* Fixed while scrolling */
-  background-color: #ffffff;        /* Fallback color */
+  background-size: cover;
+  /* Cover whole viewport */
+  background-position: center;
+  /* Center the image */
+  background-repeat: no-repeat;
+  /* No repeat */
+  background-attachment: fixed;
+  /* Fixed while scrolling */
+  background-color: #ffffff;
+  /* Fallback color */
   overflow-x: hidden;
-  padding-top: 74px; /* space for fixed header */
+  padding-top: 74px;
+  /* space for fixed header */
   min-height: 100vh;
   margin: 0;
   font-family: 'Inter', 'Inria Serif', sans-serif;
@@ -74,7 +80,7 @@ body {
   max-width: 600px;
   margin: 2rem auto 4rem auto;
   padding: 2rem;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   background-color: #efefef;
 }
@@ -133,4 +139,54 @@ form button:hover {
   color: green;
   font-weight: 600;
   font-family: 'Inria Serif', serif;
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    padding: 10px 20px;
+  }
+
+  .logo {
+    height: 50px;
+    margin-bottom: 10px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .nav-link {
+    font-size: 16px;
+  }
+
+  .search-icon {
+    align-self: flex-end;
+    margin-top: 10px;
+  }
+
+  .container {
+    width: 90%;
+    margin: 1rem auto 2rem auto;
+    padding: 1.5rem;
+  }
+
+  form input,
+  form button {
+    font-size: 16px;
+    padding: 0.6rem;
+  }
+
+  form button {
+    font-size: 16px;
+  }
+
+  .container h1 {
+    font-size: 24px;
+  }
 }

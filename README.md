@@ -77,7 +77,7 @@ npm start
 ### ✅ Submission Confirmation  
 ![Confirmation Screenshot](applynow%20page/assets/images/Screenshot%202025-05-23%20131904.png)
 
---- 
+---
 
 ## ✅ Features
 - Internship role listings (fetched dynamically)

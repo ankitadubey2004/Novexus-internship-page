@@ -1666,6 +1666,17 @@
       line-height: 72px;
     }
 
+    .nav-links {
+      justify-content: end;
+      display: flex;
+    }
+
+    .application-form {
+      grid-template-columns: 1fr;
+      margin-left: 00px;
+      margin-top: 00px;
+    }
+
     .benefits-cards {
       grid-template-columns: repeat(2, 1fr);
     }
@@ -1681,6 +1692,17 @@
     .future-section {
       flex-direction: column;
       padding: 30px 60px;
+    }
+
+    .nav-links {
+      justify-content: end;
+      display: flex;
+    }
+
+    .application-form {
+      grid-template-columns: 1fr;
+      margin-left: 00px;
+      margin-top: 00px;
     }
 
     .about-main-image,
@@ -1704,6 +1726,17 @@
   }
 
   @media (max-width: 768px) {
+    .header {
+      flex-direction: row;
+      height: auto;
+      padding: 2vh 5vw;
+      text-align: center;
+      width: 100%;
+      padding: 10px;
+
+
+    }
+
     .hero-section {
       padding-left: 60px;
     }
@@ -1713,19 +1746,34 @@
       line-height: 58px;
     }
 
-    
+    .nav-links {
+      justify-content: end;
+      display: flex;
+    }
+
+    .logo {
+      text-align: left;
+    }
+
+    .navbar a {
+      font-size: 4vw;
+      text-align: center;
+
+    }
 
     .benefits-cards,
     .services-grid {
       grid-template-columns: 1fr;
     }
 
-    .application-form {
-      grid-template-columns: 1fr;
-    }
-
     .form-group.full-width {
       grid-column: 1;
+    }
+
+    .application-form {
+      grid-template-columns: 1fr;
+      margin-left: 00px;
+      margin-top: 00px;
     }
 
     .apply-btn {
@@ -1738,14 +1786,14 @@
     }
   }
 
-   @media (max-width: 800px) {
 
-     .header {
+  @media (max-width: 800px) {
+    .header {
       flex-direction: row;
       height: auto;
       padding: 2vh 5vw;
       text-align: center;
-      width: 180vw;
+      width: 100%;
 
     }
 
@@ -1783,7 +1831,7 @@
 
     .hero-section {
       padding-left: 60px;
-      width: auto;
+      width: 100%;
     }
 
     .hero-title {
@@ -1791,8 +1839,8 @@
       line-height: 58px;
     }
 
-    
-     .benefits-cards,
+
+    .benefits-cards,
     .services-grid {
       grid-template-columns: 1fr;
     }
@@ -1817,58 +1865,61 @@
     }
   }
 
-    @media (max-width: 768px) {
-      .header {
-        flex-direction: column;
-        height: auto;
-        padding: 10px;
-      }
-
-      .nav-links {
-        flex-direction: column;
-        gap: 10px;
-        align-items: center;
-        margin-left: 0;
-        margin-top: 10px;
-      }
-
-      .hero-section {
-        padding-left: 20px;
-        height: auto;
-        padding-top: 120px;
-        text-align: center;
-      }
-
-      .hero-title {
-        font-size: 36px;
-        line-height: 44px;
-        max-width: 90%;
-      }
-
-      .hero-subtitle {
-        font-size: 16px;
-        max-width: 100%;
-        padding: 0 10px;
-        line-height: 1.4;
-      }
-
-      .search-icon {
-        margin: 10px 0;
-      }
-
-      .about-section {
-        flex-direction: column;
-        padding: 20px;
-      }
-
-      .about-images {
-        flex-direction: column;
-        align-items: center;
-      }
-
-      .about-main-image,
-      .about-secondary-image {
-        width: 100%;
-        height: auto;
-      }
+  /* @media (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      height: auto;
+      padding: 10px;
     }
+
+    .nav-links {
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+      margin-left: 0;
+      margin-top: 10px;
+      justify-content: end;
+      display: flex;
+    }
+
+
+    .hero-section {
+      padding-left: 20px;
+      height: auto;
+      padding-top: 120px;
+      text-align: center;
+    }
+
+    .hero-title {
+      font-size: 36px;
+      line-height: 44px;
+      max-width: 90%;
+    }
+
+    .hero-subtitle {
+      font-size: 16px;
+      max-width: 100%;
+      padding: 0 10px;
+      line-height: 1.4;
+    }
+
+    .search-icon {
+      margin: 10px 0;
+    }
+
+    .about-section {
+      flex-direction: column;
+      padding: 20px;
+    }
+
+    .about-images {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .about-main-image,
+    .about-secondary-image {
+      width: 100%;
+      height: auto;
+    }
+  } */
