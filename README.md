@@ -104,7 +104,7 @@ npm start
 
 ---
 
-🔁 Admin View
+## 🔁 Admin View
 
 ## 👩‍💻 Developer
 - **Intern** : Ankita Dubey
