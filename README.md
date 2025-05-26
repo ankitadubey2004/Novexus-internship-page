@@ -87,7 +87,7 @@ npm start
 - Resume URL
 - Success confirmation message after submission
 - MongoDB used for data persistence
-- Admin view : Basic table to list applicants 
+- Admin view : Basic table to list applicants
 
 --- 
 
